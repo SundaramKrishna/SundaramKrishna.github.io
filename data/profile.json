@@ -1,0 +1,55 @@
+{
+  "name": "Sundaram Krishnan",
+  "role": "AI-First Mobile Engineer",
+  "given_name": "Sundaram",
+  "family_name": "Krishnan",
+  "location": "Chennai, India",
+  "email": "sundarkrishna.tech@gmail.com",
+  "phone": "+91 97511 70039",
+  "phone_href": "+919751170039",
+  "website": "https://sundaramkrishna.github.io/",
+  "linkedin": "https://www.linkedin.com/in/sundaram-krishnan/",
+  "github": "https://github.com/SundaramKrishna",
+  "summary": "Android engineer with around 12 years of experience in mobile development. Architected a Kotlin application from scratch using Model-View-ViewModel (MVVM). Now owns Android development for Linkthread at Zoho, from defining requirements to testing the Jetpack Compose UI.",
+  "experience": [
+    {
+      "company": "Zoho Corporation Pvt Ltd",
+      "short_name": "Zoho Corporation",
+      "role": "Android Developer",
+      "dates": "December 2019 - Present",
+      "bullets": [
+        "Define requirements and structure the Android codebase for Linkthread. Build its UI in Jetpack Compose and review and test AI-assisted changes.",
+        "Use Claude Code, Cursor and Antigravity to carry project context through implementation, testing and code review.",
+        "Develop Android features for Zoho Social with iOS, backend, product management and QA teams, aligning behavior across mobile and web clients."
+      ]
+    },
+    {
+      "company": "Tranxit Technology Solutions Pvt Ltd (Appstars Applications)",
+      "short_name": "Tranxit Technology Solutions",
+      "role": "Software Developer",
+      "dates": "March 2018 - December 2019",
+      "bullets": [
+        "Architected and developed a multi-service, on-demand application from scratch using Kotlin, MVVM and Data Binding.",
+        "Structured the application for scalability, code maintainability and testability."
+      ]
+    },
+    {
+      "company": "Rifluxyss Softwares Pvt Ltd",
+      "short_name": "Rifluxyss Softwares",
+      "role": "Programmer",
+      "dates": "December 2014 - March 2018",
+      "bullets": [
+        "Communicated with clients throughout the development lifecycle, sharing progress updates, addressing concerns and gathering feedback."
+      ]
+    }
+  ],
+  "skills": [
+    {"category": "Development", "items": ["Android", "Kotlin", "Jetpack Compose"]},
+    {"category": "Architecture", "items": ["MVVM", "Data Binding"]},
+    {"category": "APIs and security", "items": ["REST APIs", "OpenAPI", "OWASP security standards"]},
+    {"category": "Engineering decisions", "items": ["Evaluating trade-offs in architecture, maintainability and delivery time"]},
+    {"category": "AI exploration", "items": ["LangChain", "LangGraph"]},
+    {"category": "Tools", "items": ["Android Studio", "IntelliJ IDEA"]}
+  ],
+  "education": {"institution": "Anna University", "degree": "Bachelor of Engineering", "dates": "April 2009 - March 2013"}
+}
