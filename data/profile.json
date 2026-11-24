@@ -10,7 +10,7 @@
   "website": "https://sundaramkrishna.github.io/",
   "linkedin": "https://www.linkedin.com/in/sundaram-krishnan/",
   "github": "https://github.com/SundaramKrishna",
-  "summary": "Android engineer with around 12 years of experience in mobile development, starting with Java before moving to Kotlin. Architected a Kotlin application from scratch using Model-View-ViewModel (MVVM). Now owns Android development for Linkthread at Zoho, from defining requirements to testing the Jetpack Compose UI.",
+  "summary": "Android engineer with around 12 years of experience in mobile development, starting with Java before moving to Kotlin. Architected a Kotlin application from scratch using Model-View-ViewModel (MVVM). Owns the full Android stack for Linkthread at Zoho.",
   "experience": [
     {
       "company": "Zoho Corporation Pvt Ltd",
@@ -18,8 +18,8 @@
       "role": "Android Developer",
       "dates": "December 2019 - Present",
       "bullets": [
-        "Define requirements and structure the Android codebase for Linkthread. Build its UI in Jetpack Compose and review and test AI-assisted changes.",
-        "Use Claude Code, Cursor and Antigravity to carry project context through implementation, testing and code review.",
+        "Own Linkthread's Android architecture and implementation, including the Jetpack Compose UI, database, offline design, networking, security, WebView and its JavaScript bridge, and testing.",
+        "Maintain AGENTS.md and manage project context across Claude Code, Cursor and Antigravity, reducing token usage and improving coding throughput.",
         "Develop Android features for Zoho Social with iOS, backend, product management and QA teams, aligning behavior across mobile and web clients."
       ]
     },

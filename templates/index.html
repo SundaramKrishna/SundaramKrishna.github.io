@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="$description">
-  <meta name="theme-color" content="#112b29">
+  <meta name="theme-color" content="#f7faf8">
   <meta name="author" content="$name">
   <meta property="og:title" content="$name | $role">
   <meta property="og:description" content="$description">
@@ -23,54 +23,42 @@
       <a class="wordmark" href="#page-top" aria-label="$name home"><span aria-hidden="true">sk.</span>$name</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" hidden>Menu</button>
       <nav id="primary-nav" aria-label="Main navigation">
-        <a href="#work">Current projects</a><a href="#experience">Experience</a><a href="#skills">Expertise</a>
-        <a class="nav-resume" href="resume.html">View resume</a>
+        <a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Expertise</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
   <main id="main" tabindex="-1">
-    <section class="hero" id="about" aria-labelledby="hero-heading">
-      <div class="hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow">$name</p>
-          <h1 id="hero-heading">$role</h1>
-          <p class="specialty">Android, Java, Kotlin and mobile architecture</p>
-          <p>I'm a mobile engineer with around 12 years of experience, currently working on Zoho Social. I started my career with Java before moving to Kotlin. I'm exploring how AI can help me build products end to end.</p>
-          <p>At Zoho, I own Android development for Linkthread. I define what each feature needs to do, structure the codebase, and use Claude Code, Cursor, and Antigravity to build, test, and review changes.</p>
-        </div>
-        <aside class="contact-card" aria-labelledby="card-title">
-          <h2 id="card-title">Resume and contact</h2>
-          <p>$location</p>
-          <div class="card-actions">
-            <a class="button primary" href="$pdf_path" download>Download resume</a>
-            <a class="button tonal" href="$vcard_path" download>Save contact</a>
+    <section class="hero wrap" id="about" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="byline">Android engineer <span aria-hidden="true">/</span> $location</p>
+        <h1 id="hero-heading">$name</h1>
+        <p class="intro">I build Android apps at Zoho, where I lead Android development for Linkthread and work on Zoho Social.</p>
+        <a class="button primary" href="resume.html">View resume</a>
+      </div>
+      <article class="feature" id="work" aria-labelledby="feature-heading" tabindex="-1">
+        <div class="profile-illustration" aria-hidden="true">
+          <div class="phone">
+            <span class="avatar">MP</span>
+            <b class="profile-name">Maya Patel</b>
+            <span class="profile-bio">Travel &amp; photography</span>
+            <div class="profile-links">
+              <div class="profile-link profile-social"><span>IG</span><span>YT</span><span>in</span></div>
+              <div class="profile-link profile-media"><span class="media-art"></span><span>Postcards from the coast</span></div>
+              <div class="profile-link profile-button">Photo journal</div>
+            </div>
           </div>
-          <figure class="desktop-qr">
-            <img src="img/resume-qr.png" width="144" height="144" alt="QR code for the resume PDF">
-            <figcaption>Scan to open my resume on your phone.</figcaption>
-          </figure>
-          <details class="mobile-qr"><summary>Show resume QR</summary>
-            <img src="img/resume-qr.png" width="144" height="144" alt="QR code for the resume PDF">
-          </details>
-          <div class="social-links"><a href="mailto:$email">Email</a><a href="$linkedin">LinkedIn</a><a href="$github">GitHub</a></div>
-        </aside>
-      </div>
+        </div>
+        <div class="feature-caption">
+          <p class="byline">In development at Zoho</p>
+          <h2 id="feature-heading">Linkthread</h2>
+          <p>One shareable page for your links. I own the full Android stack, from the Jetpack Compose UI to offline storage, networking, security, and testing.</p>
+        </div>
+      </article>
     </section>
-    <section class="work wrap" id="work" aria-labelledby="work-heading" tabindex="-1">
-      <h2 id="work-heading">Current projects</h2>
-      <div class="work-grid">
-        <article class="project linkthread">
-          <p class="eyebrow">In development at Zoho</p>
-          <h3>Linkthread</h3>
-          <p>Linkthread is a mobile app for bringing your links together on a single page you can share from your bio. Integration with Zoho Social and other Zoho products is planned.</p>
-          <p>I'm building the entire UI in Jetpack Compose. I set the requirements and give the coding agent the project context it needs. The agent writes about 90% of the code, and I review the changes and test the behavior against those requirements.</p>
-        </article>
-        <article class="project zoho">
-          <p class="eyebrow">Current professional work</p>
-          <h3>Zoho Social</h3>
-          <p>As an Android Developer at Zoho, I work with iOS, backend, product management, and QA teams to deliver mobile features and align behavior across Android and web clients.</p>
-        </article>
-      </div>
+    <section class="section wrap" aria-labelledby="zoho-heading">
+      <h2 id="zoho-heading">Zoho Social</h2>
+      <p>I build Android features with the iOS, backend, product, and QA teams, keeping behavior consistent across mobile and web.</p>
     </section>
     <section class="section wrap" id="experience" aria-labelledby="experience-heading" tabindex="-1">
       <h2 id="experience-heading">Experience</h2>
@@ -82,7 +70,21 @@
     <section class="section wrap" id="education" aria-labelledby="education-heading">
       <h2 id="education-heading">Education</h2><div><h3>$degree</h3><p>$institution ($education_dates)</p></div>
     </section>
-    <section class="contact-section" id="contact" aria-labelledby="contact-heading"><div class="wrap"><h2 id="contact-heading">Get in touch</h2><a href="mailto:$email">$email</a><a href="tel:$phone_href">$phone</a></div></section>
+    <section class="section wrap" id="contact" aria-labelledby="contact-heading" tabindex="-1">
+      <h2 id="contact-heading">Get in touch</h2>
+      <div class="contact-body">
+        <a class="contact-email" href="mailto:$email">$email</a>
+        <div class="contact-links">
+          <a href="tel:$phone_href">$phone</a><a href="$github">GitHub</a><a href="$linkedin">LinkedIn</a>
+        </div>
+        <div class="contact-links">
+          <a href="$pdf_path" download>Download resume</a><a href="$vcard_path" download>Save contact</a>
+        </div>
+        <details><summary>Show resume QR code</summary>
+          <img src="img/resume-qr.png" width="144" height="144" alt="Scan to open the resume PDF">
+        </details>
+      </div>
+    </section>
   </main>
   <footer class="site-footer wrap"><span>$name</span><a href="#page-top">Back to top</a></footer>
 </body>

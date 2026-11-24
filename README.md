@@ -1,4 +1,4 @@
-# Sundaram Krishnan — Portfolio
+# Sundaram Krishnan Portfolio
 
 A responsive, static portfolio and one-page resume for GitHub Pages. The live pages use plain HTML, CSS and JavaScript, system fonts and local assets; there are no runtime packages or external font requests.
 
@@ -12,7 +12,7 @@ Generate both HTML pages and the downloadable contact card:
 python3 scripts/build.py
 ```
 
-Regenerate the PDF and its QR code after résumé or website URL changes:
+Regenerate the PDF and its QR code after resume or website URL changes:
 
 ```sh
 python3 -m venv .venv

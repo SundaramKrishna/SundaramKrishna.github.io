@@ -1,4 +1,31 @@
 (() => {
+  const illustration = document.querySelector('.profile-illustration');
+  if (!illustration || !('IntersectionObserver' in window)) return;
+
+  const motion = window.matchMedia('(prefers-reduced-motion: no-preference)');
+  if (!motion.matches || !motion.addEventListener) return;
+
+  const threshold = 0.3;
+  const assemble = () => {
+    illustration.classList.add('is-assembled');
+    observer.disconnect();
+    motion.removeEventListener('change', handleMotionChange);
+  };
+  const handleMotionChange = event => {
+    if (!event.matches) assemble();
+  };
+  const observer = new IntersectionObserver(entries => {
+    if (entries.some(entry => entry.isIntersecting && entry.intersectionRatio >= threshold)) {
+      assemble();
+    }
+  }, { threshold });
+
+  motion.addEventListener('change', handleMotionChange);
+  illustration.classList.add('motion-ready');
+  observer.observe(illustration);
+})();
+
+(() => {
   const shell = document.querySelector('.nav-shell');
   const menu = document.querySelector('.menu-toggle');
   const nav = document.querySelector('#primary-nav');
