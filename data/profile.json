@@ -10,7 +10,7 @@
   "website": "https://sundaramkrishna.github.io/",
   "linkedin": "https://www.linkedin.com/in/sundaram-krishnan/",
   "github": "https://github.com/SundaramKrishna",
-  "summary": "Android engineer with around 12 years of experience in mobile development. Architected a Kotlin application from scratch using Model-View-ViewModel (MVVM). Now owns Android development for Linkthread at Zoho, from defining requirements to testing the Jetpack Compose UI.",
+  "summary": "Android engineer with around 12 years of experience in mobile development, starting with Java before moving to Kotlin. Architected a Kotlin application from scratch using Model-View-ViewModel (MVVM). Now owns Android development for Linkthread at Zoho, from defining requirements to testing the Jetpack Compose UI.",
   "experience": [
     {
       "company": "Zoho Corporation Pvt Ltd",
@@ -44,7 +44,7 @@
     }
   ],
   "skills": [
-    {"category": "Development", "items": ["Android", "Kotlin", "Jetpack Compose"]},
+    {"category": "Development", "items": ["Android", "Java", "Kotlin", "Jetpack Compose"]},
     {"category": "Architecture", "items": ["MVVM", "Data Binding"]},
     {"category": "APIs and security", "items": ["REST APIs", "OpenAPI", "OWASP security standards"]},
     {"category": "Engineering decisions", "items": ["Evaluating trade-offs in architecture, maintainability and delivery time"]},
