@@ -6,7 +6,7 @@
   <meta name="description" content="$description">
   <meta name="theme-color" content="#f7faf8">
   <meta name="author" content="$name">
-  <meta property="og:title" content="$name | $role">
+  <meta property="og:title" content="$name | $portfolio_focus">
   <meta property="og:description" content="$description">
   <meta property="og:type" content="website">
   <meta property="og:url" content="$website">
@@ -14,7 +14,8 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/portfolio.css">
   <script src="js/portfolio.js" defer></script>
-  <title>$name | $role</title>
+  <script type="application/ld+json">$profile_schema</script>
+  <title>$name | $portfolio_focus</title>
 </head>
 <body id="page-top">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -30,35 +31,54 @@
   </header>
   <main id="main" tabindex="-1">
     <section class="hero wrap" id="about" aria-labelledby="hero-heading">
-      <div class="hero-copy">
-        <p class="byline">Android engineer <span aria-hidden="true">/</span> $location</p>
+      <div>
+        <p class="byline">$location</p>
         <h1 id="hero-heading">$name</h1>
-        <p class="intro">I build Android apps at Zoho, where I lead Android development for Linkthread and work on Zoho Social.</p>
-        <a class="button primary" href="resume.html">View resume</a>
+        <p class="role-line">$portfolio_focus</p>
       </div>
-      <article class="feature" id="work" aria-labelledby="feature-heading" tabindex="-1">
-        <div class="profile-illustration" aria-hidden="true">
-          <div class="phone">
-            <span class="avatar">MP</span>
-            <b class="profile-name">Maya Patel</b>
-            <span class="profile-bio">Travel &amp; photography</span>
-            <div class="profile-links">
-              <div class="profile-link profile-social"><span>IG</span><span>YT</span><span>in</span></div>
-              <div class="profile-link profile-media"><span class="media-art"></span><span>Postcards from the coast</span></div>
-              <div class="profile-link profile-button">Photo journal</div>
-            </div>
-          </div>
+      <div class="hero-copy">
+        <p class="intro">$summary</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Explore projects</a>
+          <a href="resume.html">View resume</a>
         </div>
-        <div class="feature-caption">
-          <p class="byline">In development at Zoho</p>
-          <h2 id="feature-heading">Linkthread</h2>
-          <p>One shareable page for your links. I own the full Android stack, from the Jetpack Compose UI to offline storage, networking, security, and testing.</p>
-        </div>
-      </article>
+      </div>
     </section>
-    <section class="section wrap" aria-labelledby="zoho-heading">
-      <h2 id="zoho-heading">Zoho Social</h2>
-      <p>I build Android features with the iOS, backend, product, and QA teams, keeping behavior consistent across mobile and web.</p>
+    <section class="work wrap" id="work" aria-labelledby="projects-heading" tabindex="-1">
+      <h2 id="projects-heading">Selected Android work</h2>
+      <div class="case-grid">
+        <article class="project-case" id="zoho-social">
+          <p class="byline">Zoho Social · Android engineering</p>
+          <h3>Bringing a new channel to Zoho Social</h3>
+          <p>I proposed a channel integration to my manager, the product manager and other stakeholders, then built it on Android. After launch, I used feature usage events in Zoho Apptics to show that customers were adopting it.</p>
+          <p>I also built the app’s sign-up flow. After it launched, more people started their Zoho Social accounts from mobile.</p>
+          <a href="https://www.zoho.com/social/mobile-app.html">Explore the Zoho Social mobile app</a>
+        </article>
+        <article class="project-case" id="gox">
+          <p class="byline">Gox · Technical leadership</p>
+          <h3>Delivering three apps in five months</h3>
+          <p>I set the roadmap and led 10 developers building customer, partner and provider apps for rides, deliveries and local services. We delivered on schedule.</p>
+          <p>I proposed configurable service modules so we could enable features as requirements changed. I introduced Kotlin on Gox and designed offline support into the Android apps using MVVM and the Repository pattern.</p>
+        </article>
+      </div>
+    </section>
+    <section class="section wrap" aria-labelledby="more-work-heading">
+      <h2 id="more-work-heading">More Android projects</h2>
+      <div class="project-notes">
+        <article class="experience-item" id="linkthread">
+          <p class="byline">In development at Zoho</p>
+          <h3 id="feature-heading">Linkthread</h3>
+          <p>I own Android development for this shareable links page, from defining requirements to testing the Jetpack Compose UI. My scope includes offline storage, networking, security, and the JavaScript bridge between the WebView and native Android code.</p>
+        </article>
+        <article class="experience-item" id="socialflight">
+          <h3>SocialFlight &amp; Where2Ride</h3>
+          <p>I spent two years on these Android event maps for pilots and riders. The apps combined location-based challenges with a directory of more than 20,000 events at the time. The Android stack included Java, SQLite, background services, and NDK support.</p>
+        </article>
+        <article class="experience-item" id="bluedot">
+          <h3>BlueDot</h3>
+          <p>School vans and trucks could be tracked in real time, and people could share their location privately. The Android app used Google Maps, geofencing, and background services.</p>
+        </article>
+      </div>
     </section>
     <section class="section wrap" id="experience" aria-labelledby="experience-heading" tabindex="-1">
       <h2 id="experience-heading">Experience</h2>

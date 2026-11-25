@@ -1,6 +1,6 @@
 # Sundaram Krishnan Portfolio
 
-A responsive, static portfolio and one-page resume for GitHub Pages. The live pages use plain HTML, CSS and JavaScript, system fonts and local assets; there are no runtime packages or external font requests.
+A responsive, static portfolio and two-page resume for GitHub Pages. The live pages use plain HTML, CSS and JavaScript, system fonts and local assets; there are no runtime packages or external font requests.
 
 ## Update content
 
@@ -28,7 +28,7 @@ On macOS, an alternative exporter uses the built-in Swift and PDFKit frameworks 
 swift scripts/export_resume.swift
 ```
 
-This export also checks the PDF page count and text, and writes a temporary PNG preview to `/tmp/sundaram-resume-preview.png` for visual inspection.
+This export also checks the PDF page count and text, and writes a PNG preview of each page to `/tmp/sundaram-resume-preview-1.png` and `/tmp/sundaram-resume-preview-2.png` for visual inspection.
 
 ## Preview
 

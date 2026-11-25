@@ -10,17 +10,24 @@
   "website": "https://sundaramkrishna.github.io/",
   "linkedin": "https://www.linkedin.com/in/sundaram-krishnan/",
   "github": "https://github.com/SundaramKrishna",
-  "summary": "Android engineer with around 12 years of experience in mobile development, starting with Java before moving to Kotlin. Architected a Kotlin application from scratch using Model-View-ViewModel (MVVM). Owns the full Android stack for Linkthread at Zoho.",
+  "portfolio_focus": "Senior Android Engineer & Android Tech Lead",
+  "description": "Sundaram Krishnan proposed and delivered a channel integration for Zoho Social, owns Linkthread’s Android architecture, and led 10 developers to deliver Gox in five months.",
+  "summary": "I’ve built Android apps in Java and Kotlin for around 12 years. At Zoho, I proposed and delivered a new channel integration for Zoho Social and own Android development for Linkthread. At Gox, I set the roadmap and led 10 developers who delivered three apps in five months.",
   "experience": [
     {
       "company": "Zoho Corporation Pvt Ltd",
       "short_name": "Zoho Corporation",
       "role": "Android Developer",
       "dates": "December 2019 - Present",
+      "product": {"label": "Zoho Social mobile app", "url": "https://www.zoho.com/social/mobile-app.html"},
       "bullets": [
-        "Own Linkthread's Android architecture and implementation, including the Jetpack Compose UI, database, offline design, networking, security, WebView and its JavaScript bridge, and testing.",
-        "Maintain AGENTS.md and manage project context across Claude Code, Cursor and Antigravity, reducing token usage and improving coding throughput.",
-        "Develop Android features for Zoho Social with iOS, backend, product management and QA teams, aligning behavior across mobile and web clients."
+        "Proposed a channel integration to my manager, the product manager and other stakeholders, then built it for Zoho Social on Android. Tracked feature usage events in Zoho Apptics to show adoption after launch.",
+        "Built the in-app sign-up flow for Zoho Social on Android. After launch, more people started their Zoho Social accounts from mobile.",
+        "Resolved a Google Play Data safety issue involving data in transit. I adapted Zoho Social’s Android payload encryption to use an internal company framework.",
+        "Handled Google Play release preparation for Zoho Social, including the migration from APKs to Android App Bundles (AAB) and the app’s Data safety declarations.",
+        "Integrated the Play Integrity API, Firebase Cloud Messaging (FCM) for notifications, and in-app purchases. Coordinated Android feature work with iOS, backend, product and QA to keep behavior consistent across clients.",
+        "Own Android development for Linkthread, a shareable page for a user’s links. My scope runs from requirements and Jetpack Compose UI development through testing, including offline storage, networking, security and the WebView’s JavaScript bridge.",
+        "Maintain project instructions and context for Claude Code, Cursor and Antigravity."
       ]
     },
     {
@@ -29,8 +36,10 @@
       "role": "Software Developer",
       "dates": "March 2018 - December 2019",
       "bullets": [
-        "Architected and developed a multi-service, on-demand application from scratch using Kotlin, MVVM and Data Binding.",
-        "Structured the application for scalability, code maintainability and testability."
+        "Set the roadmap and led 10 developers who delivered Gox in five months. The platform covered rides, deliveries and local services across customer, partner and provider apps.",
+        "Proposed a multi-module Android architecture so service modules could be enabled as requirements changed. Introduced Kotlin on Gox and built the Android architecture from scratch.",
+        "Proposed MVVM with the Repository pattern and built offline support into the original Android design. The apps used ViewModel, LiveData, Data Binding and Google Maps.",
+        "Worked on Tranxit Taxi’s rider and driver applications in Java alongside the Kotlin work on Gox."
       ]
     },
     {
@@ -39,14 +48,42 @@
       "role": "Programmer",
       "dates": "December 2014 - March 2018",
       "bullets": [
-        "Communicated with clients throughout the development lifecycle, sharing progress updates, addressing concerns and gathering feedback."
+        "Worked directly with clients throughout development to report progress, address concerns and gather feedback."
       ]
     }
   ],
+  "resume_projects": [
+    {
+      "name": "SocialFlight & Where2Ride",
+      "duration": "24 months",
+      "description": "Worked on Android event maps for pilots and motorcycle riders. SocialFlight’s FLY2WIN and Where2Ride’s RIDE2WIN challenges used the locations people visited. The event directory listed more than 20,000 events worldwide during the project.",
+      "stack": "Android SDK, Java, SQLite, background services, Android NDK support"
+    },
+    {
+      "name": "Foodie",
+      "duration": "9 months",
+      "description": "Worked on a food-ordering service with separate apps for customers, restaurants and couriers. Customers found nearby restaurants or searched for others. Restaurant confirmation passed the order to a courier for delivery.",
+      "stack": "Android SDK, Java, SQLite, background services"
+    },
+    {
+      "name": "BlueDot",
+      "duration": "6 months",
+      "description": "Worked on an Android app for real-time location sharing. School vans and trucks could be tracked on a map, while a private sharing feature let individuals share their current location with family and friends.",
+      "stack": "Android SDK, Java, SQLite, Google Maps, geofencing, background services"
+    },
+    {
+      "name": "Tranxit Taxi",
+      "duration": "6 months",
+      "description": "Worked on a pair of apps for booking taxis. A passenger requested a ride in one app and the driver provided the service and updated the ride status in the other. The Java implementation included broadcast receivers, background services and notifications.",
+      "stack": "Android SDK, Java, Google Maps, Firebase Realtime Database"
+    }
+  ],
   "skills": [
-    {"category": "Development", "items": ["Android", "Java", "Kotlin", "Jetpack Compose"]},
-    {"category": "Architecture", "items": ["MVVM", "Data Binding"]},
-    {"category": "APIs and security", "items": ["REST APIs", "OpenAPI", "OWASP security standards"]},
+    {"category": "Development", "items": ["Android SDK", "Java", "Kotlin", "Jetpack Compose"]},
+    {"category": "Architecture", "items": ["MVVM", "ViewModel", "LiveData", "Data Binding"]},
+    {"category": "Maps and Firebase", "items": ["Google Maps", "Geofencing", "Firebase Realtime Database", "Firebase Cloud Messaging (FCM)"]},
+    {"category": "APIs and security", "items": ["Google Play Integrity API", "Payload encryption", "REST APIs", "OpenAPI", "OWASP security standards"]},
+    {"category": "Google Play releases", "items": ["Play Store release preparation", "Android App Bundles (AAB)", "In-app purchases", "Data safety declarations", "Google Play policy issue resolution"]},
     {"category": "Engineering decisions", "items": ["Evaluating trade-offs in architecture, maintainability and delivery time"]},
     {"category": "AI exploration", "items": ["LangChain", "LangGraph"]},
     {"category": "Tools", "items": ["Android Studio", "IntelliJ IDEA"]}
